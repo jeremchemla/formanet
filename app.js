@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const mongoose = require('mongoose');
-const AdminBro = require('admin-bro');
-const AdminBroExpress = require('@admin-bro/express');
-const AdminBroMongoose = require('@admin-bro/mongoose');
+// const mongoose = require('mongoose');
+// const AdminBro = require('admin-bro');
+// const AdminBroExpress = require('@admin-bro/express');
+// const AdminBroMongoose = require('@admin-bro/mongoose');
 
 
 
@@ -13,15 +13,15 @@ const AdminBroMongoose = require('@admin-bro/mongoose');
 const app = express();
 const port = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
-AdminBro.registerAdapter(AdminBroMongoose);
+// AdminBro.registerAdapter(AdminBroMongoose);
 
-const adminBro = new AdminBro({
-  databases: [mongoose],
-  rootPath: '/admin',
-});
+// const adminBro = new AdminBro({
+//   databases: [mongoose],
+//   rootPath: '/admin',
+// });
 
-const router = AdminBroExpress.buildRouter(adminBro);
-app.use(adminBro.options.rootPath, router);
+// const router = AdminBroExpress.buildRouter(adminBro);
+// app.use(adminBro.options.rootPath, router);
 
 
 
