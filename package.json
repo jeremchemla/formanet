@@ -16,9 +16,11 @@
     "express": "^4.18.3",
     "express-formidable": "^1.2.0",
     "git": "^0.1.5",
+    "mime": "^4.0.3",
     "mongodb": "^6.4.0",
     "mongoose": "^8.2.0",
     "nodemailer": "^6.9.10",
+    "quill": "^2.0.2",
     "tslib": "^2.6.2"
   }
 }
